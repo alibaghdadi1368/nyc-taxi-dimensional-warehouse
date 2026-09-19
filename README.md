@@ -147,7 +147,7 @@ stakeholder could act on directly from this model.
 
 5. **Run the SQL scripts in order**, in Snowsight:
 
-sql/01_setup/ (run all 3 files in order) sql/02_raw_layer/ (run all 4 files in order) sql/03_dimensions/ (run all 3 files in order) sql/04_facts/ (run the file) sql/05_analysis/ (explore the results)
+sql/01_setup/ (run all 3 files in order) sql/02_raw_layer/ (run all 4 files in order) sql/03_dimensions/ (run all 3 files in order) sql/04_facts/ (run the file) sql/05_analysis/ (explore the results)/ 06_monitoring/ 07_teardown
 
 
 ---
