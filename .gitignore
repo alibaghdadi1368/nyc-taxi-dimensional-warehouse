@@ -1,0 +1,17 @@
+# Secrets
+.env
+config/.env
+*.pem
+credentials.json
+.aws/
+
+# Data files - too large / not needed in repo
+data/*.csv
+data/*.parquet
+!data/.gitkeep
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.DS_Store
