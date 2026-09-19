@@ -31,6 +31,8 @@ See `docs/architecture_diagram.png` for the visual version.
 | `sql/03_dimensions/` | All dimension tables, including the SCD Type 2 logic |
 | `sql/04_facts/` | The fact table build |
 | `sql/05_analysis/` | Example business queries run against the final model |
+| `sql/06_monitoring/` | Queries to check Snowflake credit consumption and warehouse state |
+| `sql/07_teardown/` | Cleanup queries to suspend compute and remove all project resources |
 | `aws/` | IAM policy used (sanitized) and setup notes |
 | `docs/` | Architecture diagram and screenshots |
 
@@ -165,6 +167,19 @@ Built entirely within Snowflake's free trial credits (X-Small warehouse,
 credits) and a small (<100 MB) dataset well within AWS Free Tier limits.
 All AWS resources (S3 bucket contents, IAM role/policy) were removed after
 completing the project.
+
+### Monitoring & Teardown
+
+This project includes explicit SQL for two things many portfolio projects
+skip:
+
+- **`sql/06_monitoring/cost_monitoring.sql`** - checks actual credit
+  consumption against the account's warehouse metering history, rather than
+  just assuming the warehouse behaved as configured.
+- **`sql/07_teardown/cleanup_snowflake.sql`** - suspends the warehouse
+  explicitly and includes the full drop sequence (database, warehouse,
+  integration, resource monitor) for a complete teardown once the project
+  is finished.
 
 ## 📈 What I'd Add for a Production Version
 
