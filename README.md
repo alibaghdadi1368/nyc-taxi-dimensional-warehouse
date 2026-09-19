@@ -1,4 +1,3 @@
-markdown
 # NYC Taxi Dimensional Data Warehouse (Snowflake + AWS S3)
 
 A Kimball-style dimensional data warehouse built on **Snowflake**, ingesting
@@ -184,4 +183,5 @@ This screenshot demonstrates the SCD Type 2 implementation in the project, where
 
 ## 📬 Contact
 
-**Ali Baghdadi** : [LinkedIn](https://linkedin.com/in/alibaghdadi)  alibaghdadi1368@gmail.com
+**Ali Baghdadi** : [LinkedIn](https://linkedin.com/in/alibaghdadi)  
+alibaghdadi1368@gmail.com
