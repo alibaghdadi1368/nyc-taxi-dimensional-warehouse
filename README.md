@@ -122,7 +122,7 @@ stakeholder could act on directly from this model.
 
 1. **Clone this repo**
 ```bash
-   git clone https://github.com/YOUR_USERNAME/nyc-taxi-dimensional-warehouse.git
+   git clone https://github.com/alibaghdadi1368/nyc-taxi-dimensional-warehouse.git
    cd nyc-taxi-dimensional-warehouse
 ```
 
