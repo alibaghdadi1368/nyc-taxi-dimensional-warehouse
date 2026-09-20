@@ -196,6 +196,11 @@ This screenshot demonstrates the SCD Type 2 implementation in the project, where
 ![SCD Type 2 proof](docs/screenshots/scd2_proof.png)
 ---
 
+## 🔗 Companion Project
+The Snowpark Python transformation layer for this data is implemented as
+a separate, focused project: [snowpark-elt-pipeline](https://github.com/alibaghdadi1368/snowpark-elt-pipeline)
+
+
 ## 📬 Contact
 
 **Ali Baghdadi** : [LinkedIn](https://linkedin.com/in/alibaghdadi)  
